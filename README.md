@@ -83,8 +83,6 @@ scripts/figure16/plot_fig16_3cluster_varyD_nrods_mp_1_shift_center.m
 - Ling Xu: lxu@ncat.edu
 - Yi Jiang: yjiang12@gsu.edu
 
-## License
-
-MIT License
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 
