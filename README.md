@@ -32,19 +32,28 @@ addpath(genpath('src'));
 ```
 ├── src/                    # Core simulation code
 │   
-├── scripts/                # Scripts and data for generating each of the figures 
-│   
-└── example/               # Example usage
+├── scripts/                # Scripts to generate data  
+
 ```
 
 ## Quick Start
 
 ```matlab
-% Single cilia cluster velocity field (Fig. 11)
-scripts/codes_1cluster/plot_1cluster_1rod_grid_vel.m
 
-% Three clusters with spacing sweep (Fig. 16)
-scripts/figure16/plot_fig16_3cluster_varyD_nrods_mp_1_shift_center.m
+%1. 1 cluster,  1 rod/cilium per cluster
+      main_1cluster_1rod.m                
+
+%2. 3 clusters, 9 rods/cilia per cluster
+      main_3clusters_9rods_store_strength.m     # compute stokeslet strength, saved data in the folder out_data_3clusters_9rods
+      main_3clusters_9rods_comp_traj.m          # read stokeslet strength, compute particle trajectory, saved in folder out_data_3clusters_9rods/traj
+      plot_3clusters_9rods_traj.m               # read particle trajectory, plot their location. 
+
+%3. Tissue patch, nu=0.1, 9 rods/cilia per cluster
+      main_nu0d1_store_strength.m   # compute stokeslet strength, saved data in the folder out_data_3clusters_9rods     
+      main_nu0d1_comp_traj.m        # read stokeslet strength, compute particle trajectory, saved in folder out_data_3clusters_9rods/traj
+      plot_nu0d1_traj.m             # read particle trajectory, plot their location.
+      generate_random_number_2D.m   # given patch density, generate random locations for cilia. 
+ 
 ```
 
 ## Key Parameters
