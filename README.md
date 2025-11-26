@@ -32,7 +32,7 @@ addpath(genpath('src'));
 ```
 ├── src/                    # Core simulation code
 │   
-├── scripts/                # Scripts to generate data  
+├── scripts                 # Scripts to generate data  
 
 ```
 
